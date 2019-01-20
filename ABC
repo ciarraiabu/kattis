@@ -1,0 +1,121 @@
+import java.util.*;
+public class aBC
+{
+      public static void main(String[] args)
+      {
+           Scanner sc=new Scanner(System.in);
+           String n=sc.nextLine();
+           String abc=sc.nextLine();
+           
+           String del= " ";
+           String s[]=n.split(del);
+           int u=Integer.parseInt(s[0]);
+           int v=Integer.parseInt(s[1]);
+           int w=Integer.parseInt(s[2]);
+           
+           
+           if(abc.equals("ABC") && u<v && u<w && v<w)
+           {
+               System.out.print(u+" "+v+" "+w);
+           }
+           else if(abc.equals("ABC") && u<v && u<w && w<v)
+           {
+               System.out.print(u+" "+w+" "+v);
+           }
+           else if(abc.equals("ABC") && v<u && v<w &&u<w)
+           {
+               System.out.print(v+" "+u+" "+w);
+           }
+           else if(abc.equals("ABC") && v<u && v<w && w<u)
+           {
+               System.out.print(v+" "+w+" "+u);
+           }
+           else if(abc.equals("ABC") && w<u && w<v && v<u)
+           {
+               System.out.print(w+" "+v+" "+u);
+           }
+           else if(abc.equals("ABC") && w<u && w<v && u<v)
+           {
+               System.out.print(w+" "+v+" "+u);
+           }
+           //
+           else if(abc.equals("BAC") && u<v && u<w && v<w)
+           {
+               System.out.print(v+" "+u+" "+w);
+           }
+           else if(abc.equals("BAC") && u<v && u<w && w<v)
+           {
+               System.out.print(w+" "+u+" "+v);
+           }
+           else if(abc.equals("BAC") && v<u && v<w &&u<w)
+           {
+               System.out.print(u+" "+v+" "+w);
+           }
+           else if(abc.equals("BAC") && v<u && v<w && w<u)
+           {
+               System.out.print(w+" "+v+" "+u);
+           }
+           else if(abc.equals("BAC") && w<u && w<v && v<u)
+           {
+               System.out.print(v+" "+w+" "+u);
+           }
+           else if(abc.equals("BAC") && w<u && w<v && u<v)
+           {
+               System.out.print(v+" "+w+" "+u);
+           }
+           //
+           else if(abc.equals("CBA") && u<v && u<w && v<w)
+           {
+               System.out.print(w+" "+v+" "+u);
+           }
+           else if(abc.equals("CBA") && u<v && u<w && w<v)
+           {
+               System.out.print(v+" "+w+" "+u);
+           }
+           else if(abc.equals("CBA") && v<u && v<w &&u<w)
+           {
+               System.out.print(w+" "+u+" "+v);
+           }
+           else if(abc.equals("CBA") && v<u && v<w && w<u)
+           {
+               System.out.print(u+" "+w+" "+v);
+           }
+           else if(abc.equals("CBA") && w<u && w<v && v<u)
+           {
+               System.out.print(u+" "+v+" "+w);
+           }
+           else if(abc.equals("CBA") && w<u && w<v && u<v)
+           {
+               System.out.print(v+" "+u+" "+w);
+           }
+           //
+           else if(abc.equals("CAB") && u<v && u<w && v<w)
+           {
+               System.out.print(w+" "+u+" "+v);
+           }
+           else if(abc.equals("CAB") && u<v && u<w && w<v)
+           {
+               System.out.print(v+" "+u+" "+w);
+           }
+           else if(abc.equals("CAB") && v<u && v<w &&u<w)
+           {
+               System.out.print(w+" "+v+" "+u);
+           }
+           else if(abc.equals("CAB") && v<u && v<w && w<u)
+           {
+               System.out.print(u+" "+v+" "+w);
+           }
+           else if(abc.equals("CAB") && w<u && w<v && v<u)
+           {
+               System.out.print(u+" "+w+" "+v);
+           }
+           else if(abc.equals("CAB") && w<u && w<v && u<v)
+           {
+               System.out.print(u+" "+w+" "+v);
+           }
+        
+        
+
+ }
+ }
+
