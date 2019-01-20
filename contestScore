@@ -1,0 +1,33 @@
+import java.util.*;
+public class contestScoring
+{
+ public static void main(String[]args)
+ {
+    Scanner sc=new Scanner(System.in);
+    ArrayList<String> p=new ArrayList<String>();
+    int rt=0;
+     
+    while(sc.nextInt()!=-1)
+    {
+        String log=sc.nextLine();
+        
+        String del=" ";
+        String s[]=log.split(del);
+        
+        if(s[2].equals("right"))
+        {
+             rt+=Integer.valueOf(s[0]);
+             p.add(s[1]);
+        }
+        for(int i=0; i<p.size(); i++)
+        {
+             if(s[2].equals("wrong") && p.contains(s[1]))
+             {
+                rt+=20;
+             }
+        }
+        System.out.println(rt);
+        
+     }
+  }
+}
