@@ -1,0 +1,42 @@
+import java.util.*;
+
+public class average
+{
+    public static void main(String[] args)
+    {
+         Scanner sc=new Scanner(System.in);
+         int t=sc.nextInt();
+         int n=sc.nextInt();
+         int g[]=new int[n];
+         double c=0.000, a=0.000, p=0.000;
+         double aa=0.000;
+         
+         for(int i=0; i<t; i++)
+         {
+              for(int j=0; j<n; j++)
+              {
+                   g[j]=sc.nextInt();
+                   c+=g[j];
+                   a=c/n;
+                   
+      
+              }
+              for(int k=0; k<g.length; k++)
+              {
+                    if(g[k]>a)
+                   {
+                      p++;
+                   }
+              }
+              aa = (p/n)*100.000;
+              aa=Math.round(aa*1000.0)/1000.0;
+                
+              
+        }
+              String result = String.format("%.3f", (aa));
+              System.out.println(result+"%");
+              
+        
+    }
+    
+ }
