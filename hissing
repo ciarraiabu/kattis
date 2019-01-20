@@ -1,0 +1,30 @@
+import java.util.*;
+public class hissing
+{
+   public static void main(String[] args)
+   {
+       Scanner sc=new Scanner(System.in);
+       String hiss=sc.nextLine();
+       boolean h=true;
+       
+       for(int i=1; i<hiss.length(); i++)
+       {
+           if(hiss.indexOf("ss")!=-1)
+           {
+                h=true;
+           }
+           else
+           {
+                h=false;
+           }
+       }
+       if(h==true)
+       {
+       System.out.println("hiss");
+       }
+       else
+       {
+       System.out.println("no hiss");
+       }
+   }
+}
